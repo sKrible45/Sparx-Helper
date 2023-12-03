@@ -18,7 +18,7 @@ Later you can search for that question number and get the screenshot.
 2. install the app called "python 3.11"
 3. Go to the releases tab on this page then click the file named "Sparx Helper"
 ![App Screenshot](https://github.com/sKrible45/Sparx-Helper/blob/main/images/releases.png)
-4. Go to file explorer and right click the file (its in downloads) and click extract all.
+4. Go to file explorer and right click the file (its in downloads but I would recomend moving it to the folder name "Desktop") and click extract all.
 ![App Screenshot](https://github.com/sKrible45/Sparx-Helper/blob/main/images/ExtractFiles.png)
 5. Next press extract.
 6. Then click close and double click the file named "installLIB" (its in the folder called "installer" in the foled you just extracted) (if it says "Windows protected your pc" press "run anyway")
