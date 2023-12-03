@@ -26,7 +26,7 @@ Later you can search for that question number and get the screenshot.
 8. Next press any key to exit.
 
 ## HOW TO USE:
-1. Next double clicked "SparxHelper" and wait untill you see a window that looks like this picture (again if it says "Windows protected your pc" press "run anyway")
+1. Next double clicked "Sparx Helper.exe" and wait untill you see a window that looks like this picture (again if it says "Windows protected your pc" press "run anyway")
  
 ![App Screenshot](https://github.com/sKrible45/Sparx-Helper/blob/main/images/TheWindow.png)
  
