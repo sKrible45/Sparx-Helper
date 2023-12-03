@@ -1,0 +1,25 @@
+                             .__                      ____   ____  
+___  __  ____ _______  ______|__|  ____    ____      /_   | /_   | 
+\  \/ /_/ __ \\_  __ \/  ___/|  | /  _ \  /    \      |   |  |   | 
+ \   / \  ___/ |  | \/\___ \ |  |(  <_> )|   |  \     |   |  |   | 
+  \_/   \_____>|__|  /______>|__| \____/ |___|__/     |___|/\|___|      
+                                                                   
+INSTRUCTIONS TO INSTALL:
+
+1. open microsoft store and search for a app called "python 3.11"
+2. install the app called "python 3.11"
+3. Go to the releases tab on this page then click the file named "Sparx Helper"
+4. Go to file explorer and right click the file (its in downloads) and click extract all
+5. Next press extract.
+6. Then click close and double click the file named "installLIB" (its in the folder called "installer") (if it says "Windows protected your pc" press "run anyway")
+7. Once that has finished it should say "Press any key to continue . . .".
+8. Next press any key to exit.
+
+HOW TO USE:
+1. Next double clicked "SparxHelper" and wait untill you see a window with a blue colour. (again if it says "Windows protected your pc" press "run anyway")
+2. to open sparx press the button named "OPEN FIREFOX"
+3. if sparx asks you for a bookwork check click the square outlie and type the bookwork code e.g."1A"(the a needs to be a capital) then click find.
+
+HOW TO CLOSE
+1. press the X in the corner of the window.
+2. go to the other window and press any key.
