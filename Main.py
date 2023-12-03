@@ -10,7 +10,6 @@ import time
 import os
 import tkinter as tk
 from tkinter import ttk
-import mouse
 from PIL import Image
 
 # CONFIG
