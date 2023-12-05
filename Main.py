@@ -30,6 +30,7 @@ SCREEN_WITH = 250
 SCREEN_HEIGHT = 100
 
 #set window attrabutes.
+root.resizable(False, False)
 root.attributes('-topmost', 1)
 root.geometry(str(SCREEN_WITH)+"x"+str(SCREEN_HEIGHT))
 root.iconbitmap('./assets/app.ico')
