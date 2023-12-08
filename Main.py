@@ -26,14 +26,15 @@ root = tk.Tk()
 root.title("Sparx Helper")
 
 SCREEN_WITH = 250
-SCREEN_HEIGHT = 150
+SCREEN_HEIGHT = 100
 
 #set window attrabutes.
 root.resizable(False, False)
 root.attributes('-topmost', 1)
 root.geometry(str(SCREEN_WITH)+"x"+str(SCREEN_HEIGHT))
 root.iconbitmap('./assets/app.ico')
-
+root.columnconfigure((0,1,2), weight = 1)
+root.rowconfigure((0,1,2,3,4,5,6,7,8,9,10), weight = 1)
 
 def openBrowser():
     
@@ -155,25 +156,24 @@ selected_browser = tk.StringVar()
 browser_cb = ttk.Combobox(root, textvariable=selected_browser)
 browser_cb['values'] = ["chrome","firefox"]
 browser_cb['state'] = 'readonly'
-browser_cb.place(x=125,y=10, anchor=tk.CENTER)
-
+browser_cb.grid(column = 1, row = 0,sticky="n")
 #Open Browser Button
-ttk.Button(root, text = "Open The Browser", command = openBrowser).place(x = 125,y = 35,width = 250,anchor=tk.CENTER)
+ttk.Button(root, text = "Open The Browser", command = openBrowser).grid(column = 0,row = 1,sticky="new",columnspan = 3)
 
 #Search Box
 SearchBox = ttk.Entry(root, textvariable=SearchBoxText)
-SearchBox.place(x = 87, y = 62,width = 170,height=25, anchor=tk.CENTER)
+SearchBox.grid(row = 2, column = 0, sticky = "ew",columnspan = 2)
 
 #Find Button
 FindButton = ttk.Button(root, text = "Find", command = search)
-FindButton.place(x=212,y = 62, width=72,height=27, anchor=tk.CENTER)
+FindButton.grid(row = 2, column = 2, sticky = "ew")
 
 #Notes Label
-ttk.Label(root,text="Notes:").place(x = 30, y = 90, anchor=tk.CENTER)
+ttk.Label(root,text="Notes:").grid(row = 3, column = 0)
 
 #Notes Text Box
 Notes = ttk.Entry(root, textvariable=NotesText)
-Notes.place(x = 150, y = 90, width= 190, anchor=tk.CENTER)
+Notes.grid(row = 3, column = 1,columnspan = 2,sticky = "ew")
 
 QuestionCheck()
 root.mainloop()
