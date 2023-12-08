@@ -10,7 +10,6 @@ import time
 import os
 import tkinter as tk
 from tkinter import ttk
-from PIL import Image
 
 # CONFIG
 
@@ -27,7 +26,7 @@ root = tk.Tk()
 root.title("Sparx Helper")
 
 SCREEN_WITH = 250
-SCREEN_HEIGHT = 100
+SCREEN_HEIGHT = 150
 
 #set window attrabutes.
 root.resizable(False, False)
@@ -83,13 +82,12 @@ def screenshot():
             pass
 
 
-            
 def search():
-    global textbox
-    if (textbox.get() == ''):
+    global SearchBox
+    if (SearchBox.get() == ''):
         pass
     else:
-        searchfile = textbox.get()+".png"
+        searchfile = SearchBox.get()+".png"
         for i in os.listdir(folder):
             if (i == searchfile):
                 #img = Image.open(folder+i)
@@ -130,7 +128,8 @@ def QuestionCheck():
     #==========================================================================================
 
 
-text = tk.StringVar()
+SearchBoxText = tk.StringVar()
+NotesText = tk.StringVar()
 
 #see if the browser is open
 global BrowserOpen
@@ -151,19 +150,30 @@ if not os.path.exists(path):
     os.mkdir(path)
 
 
-
+#Browser Selection Box
 selected_browser = tk.StringVar()
 browser_cb = ttk.Combobox(root, textvariable=selected_browser)
-
 browser_cb['values'] = ["chrome","firefox"]
 browser_cb['state'] = 'readonly'
-browser_cb.pack()
+browser_cb.place(x=125,y=10, anchor=tk.CENTER)
 
-ttk.Button(root, text = "Open The Browser", command = openBrowser).pack(fill=tk.X)
+#Open Browser Button
+ttk.Button(root, text = "Open The Browser", command = openBrowser).place(x = 125,y = 35,width = 250,anchor=tk.CENTER)
 
-textbox = ttk.Entry(root, textvariable=text)
-textbox.pack(fill= tk.X,side=tk.LEFT,padx=1)
-ttk.Button(root, text = "Find", command = search).pack(side=tk.RIGHT,padx=1)
+#Search Box
+SearchBox = ttk.Entry(root, textvariable=SearchBoxText)
+SearchBox.place(x = 87, y = 62,width = 170,height=25, anchor=tk.CENTER)
+
+#Find Button
+FindButton = ttk.Button(root, text = "Find", command = search)
+FindButton.place(x=212,y = 62, width=72,height=27, anchor=tk.CENTER)
+
+#Notes Label
+ttk.Label(root,text="Notes:").place(x = 30, y = 90, anchor=tk.CENTER)
+
+#Notes Text Box
+Notes = ttk.Entry(root, textvariable=NotesText)
+Notes.place(x = 150, y = 90, width= 190, anchor=tk.CENTER)
 
 QuestionCheck()
 root.mainloop()

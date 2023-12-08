@@ -1,4 +1,4 @@
-# Sparx-Helper V1.2
+# Sparx-Helper V1.3
 a program to screenshot and save the answers from sparx
 
 
