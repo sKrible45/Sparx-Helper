@@ -169,7 +169,7 @@ FindButton = ttk.Button(root, text = "Find", command = search)
 FindButton.grid(row = 2, column = 2, sticky = "ew")
 
 #Notes Label
-ttk.Label(root,text="Notes:").grid(row = 3, column = 0)
+ttk.Label(root,text="Notes:",font="Calibri 12").grid(row = 3, column = 0)
 
 #Notes Text Box
 Notes = ttk.Entry(root, textvariable=NotesText)
